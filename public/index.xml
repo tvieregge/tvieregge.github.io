@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tvier.net</title>
+    <link>http://example.org/</link>
+    <description>Recent content on tvier.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 21:44:54 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>new blog</title>
+      <link>http://example.org/blog/new_blog/</link>
+      <pubDate>Sat, 15 Jan 2022 21:44:54 -0500</pubDate>
+      
+      <guid>http://example.org/blog/new_blog/</guid>
+      <description>It&amp;rsquo;s a new blog. Maybe I&amp;rsquo;ll write about it</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/i_use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/i_use/</guid>
+      <description>An idea taken from David Mytton.
+Once a year (or whatever period), record what I&amp;rsquo;m using for my personal computer setup. It should be interesting to see how things change.
+I wonder if this page would be redendant with good/enough notes?
+I&amp;rsquo;ll set a reminder for sometime around new year [[2021-12-30_Thu]] to record again.
+[[2021-07-19_Mon]]  Main computer: Dying, ~10 year old, Dell XPS; Intel (i5-????k) and nvidia (gtx1660) desktop with 144hz 1080p monitor OS: Manjaro i3 edition, windows for games Phone: Nokia 6.</description>
+    </item>
+    
+  </channel>
+</rss>

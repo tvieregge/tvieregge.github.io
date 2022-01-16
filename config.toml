@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'tvier.net'
+theme = "hugo-bearblog"
+author = 'Tim Vieregge'
+
+enableRobotsTXT = true
+
+[params]
+  # The "description" of your website. This is used in the meta data of your generated html.
+  title = "tvier.net"
