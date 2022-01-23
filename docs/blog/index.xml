@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on tvier.net</title>
-    <link>http://example.org/blog/</link>
+    <link>http://www.tvier.net/blog/</link>
     <description>Recent content in Blog on tvier.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jan 2022 16:49:41 -0500</lastBuildDate><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 16:49:41 -0500</lastBuildDate><atom:link href="http://www.tvier.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
-      <link>http://example.org/blog/test-post/</link>
+      <link>http://www.tvier.net/blog/test-post/</link>
       <pubDate>Sun, 23 Jan 2022 16:49:41 -0500</pubDate>
       
-      <guid>http://example.org/blog/test-post/</guid>
+      <guid>http://www.tvier.net/blog/test-post/</guid>
       <description>This is a page about »Test Post«.
 And is for debugging</description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>http://example.org/blog/new_blog/</link>
+      <link>http://www.tvier.net/blog/new_blog/</link>
       <pubDate>Sat, 15 Jan 2022 21:44:54 -0500</pubDate>
       
-      <guid>http://example.org/blog/new_blog/</guid>
+      <guid>http://www.tvier.net/blog/new_blog/</guid>
       <description>It&amp;rsquo;s a new blog. Maybe I&amp;rsquo;ll write about it</description>
     </item>
     

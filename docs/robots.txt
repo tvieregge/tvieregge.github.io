@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://example.org/sitemap.xml
+Sitemap: http://www.tvier.net/sitemap.xml
