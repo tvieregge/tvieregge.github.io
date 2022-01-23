@@ -1,3 +1,3 @@
 tvier.net
 
-See about for details
+generate the site in the `docs` directory for it to be served by github
