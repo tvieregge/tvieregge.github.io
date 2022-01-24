@@ -6,17 +6,7 @@
     <description>Recent content in Blog on tvier.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jan 2022 16:49:41 -0500</lastBuildDate><atom:link href="http://www.tvier.net/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test Post</title>
-      <link>http://www.tvier.net/blog/test-post/</link>
-      <pubDate>Sun, 23 Jan 2022 16:49:41 -0500</pubDate>
-      
-      <guid>http://www.tvier.net/blog/test-post/</guid>
-      <description>This is a page about »Test Post«.
-And is for debugging</description>
-    </item>
-    
+    <lastBuildDate>Sat, 15 Jan 2022 21:44:54 -0500</lastBuildDate><atom:link href="http://www.tvier.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>new blog</title>
       <link>http://www.tvier.net/blog/new_blog/</link>
