@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="data:;base64,=">
+<title>A walk through lightweight blogging | tvier.net</title>
+<meta name="title" content="A walk through lightweight blogging" />
+<meta name="description" content="Let&rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.
+This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="A walk through lightweight blogging" />
+<meta property="og:description" content="Let&rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.
+This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.tvier.net/blog/a_walk_through_lightweight_blogging/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-02-12T23:57:11-05:00" />
+<meta property="article:modified_time" content="2022-02-12T23:57:11-05:00" /><meta property="og:site_name" content="tvier.net" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A walk through lightweight blogging"/>
+<meta name="twitter:description" content="Let&rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.
+This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person."/>
+
+
+
+<meta itemprop="name" content="A walk through lightweight blogging">
+<meta itemprop="description" content="Let&rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.
+This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person."><meta itemprop="datePublished" content="2022-02-12T23:57:11-05:00" />
+<meta itemprop="dateModified" content="2022-02-12T23:57:11-05:00" />
+<meta itemprop="wordCount" content="999">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>tvier.net</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/i_use/">I use</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>A walk through lightweight blogging</h1>
+<p>
+  <i>
+    <time datetime='2022-02-12' pubdate>
+      12 Feb, 2022
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Let&rsquo;s say you want to set up a blog, there are plenty of <a href="https://sites.google.com/site/steveyegge2/you-should-write-blogs">good reasons</a> after all. But, you hate websites that are slow, full of spyware, and <a href="https://danluu.com/web-bloat/">unusable on spotty connections</a>. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.</p>
+<p>This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person.</p>
+<h3 id="what-was-i-aiming-for">What was I aiming for?</h3>
+<p>First I needed to figure out what I actually wanted so I knew what I was building. This is what I came up with:</p>
+<ul>
+<li>&ldquo;fast&rdquo;</li>
+<li>Simple layout and styling, but more than basic HTML (I&rsquo;m looking for <a href="https://axelletrt.github.io/bettermotherfuckingwebsite/">bettermotherfuckingwebsite</a> not <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite</a>)</li>
+<li>No tracking. No JS at all ideally</li>
+<li>Easy to get to (simple, flexible domain)</li>
+<li>Easy for me to use (This means publishing in markdown, since that&rsquo;s what I take my notes in)</li>
+</ul>
+<p>How fast is fast though? I had speed as a goal, so I needed a reliable way to measure it and a target to aim for.</p>
+<p><a href="http://danluu.com/web-bloat/">http://danluu.com/web-bloat/</a> shows that his site is one of the fastest out there, and mentions <a href="https://www.webpagetest.org/">webpage test</a>, so lets run the first through the second and see what we get. All tests are done with &ldquo;desktop&rdquo; performance located in Virginia, and repeated results were stable enough I could just grab one.</p>
+<p><img src="/static/img/20220212234525.png" alt="img"></p>
+<p>So we got 290ms until &ldquo;Visually Complete&rdquo;, which seemed like the best metric to go by, even though I still can&rsquo;t find exactly what it means&hellip; We also got 187 ms for the data transfer to complete. This is a very clear metric, there&rsquo;s no ambiguity about what it means, but in non-trivial cases it can be difficult to interpret. Luckily I&rsquo;m aiming for the trivial case.</p>
+<h3 id="can-i-use-a-platform">Can I use a platform?</h3>
+<p>The easiest option I could think of was using some other, less well know, blogging platform. After digging around for a while I found <a href="https://bearblog.dev/">bearblog</a> and <a href="https://bearblog.dev/">mataroa.blog</a>, both of which are on the wonderful <a href="https://plaintextproject.online/tools.html">Plain Text Project</a>. They both support markdown, seem pretty easy to use, and look pretty good. Running them through webpagetest highlighted some issues though.</p>
+<p>mataroa was particularly slow to load, getting uncomfortably close to 1s to be visually complete. Most of this was from a strangely slow connection. I tested from various locations around the world and this stayed consistent. Not sure what&rsquo;s up, but it didn&rsquo;t look like a good option.
+<img src="/static/img/20220128001042.png" alt="img"></p>
+<p>bearblog looked like just what I wanted. It loaded super quickly, used markdown, was simple to set up and you can link up custom domains! Looking closely though it was loading some JS. Specifically it was loading a <a href="https://usefathom.com/">fathom</a> tracking script. It&rsquo;s a privacy focused tracker and all that, but I would prefer to avoid it.</p>
+<p><img src="/static/img/20220128002449.png" alt="img"></p>
+<p>This would be the pragmatic place to stop, but this isn&rsquo;t work, it&rsquo;s play! I wanted to see if I could get something better. It was time to look into hosting and site generation.</p>
+<h3 id="hosting">Hosting</h3>
+<p>So I needed to test a hosting provider too see get some performance benchmarks. Github pages seems popular, and they use a CDN (fastly), so I hosted a near empty site and ran it through webpagetest.</p>
+<p>There&rsquo;s some JS junk going on that they generate by default, but everything before the html loading (i.e. the stuff I we need to worry about at this point) is fast, really fast. It&rsquo;s nice when things work out.
+<img src="/static/img/20220128002937.png" alt="img"></p>
+<h3 id="site-generation">Site generation</h3>
+<p>There were so many options. I saw <a href="https://gohugo.io/">HUGO</a> pop up repeatedly so I took a look. After spending way too long looking through themes that weren&rsquo;t <em>quite</em> right, I eventually found  <a href="https://themes.gohugo.io/themes/hugo-bearblog/">hugo-bearblog</a>. Exactly what I wanted!</p>
+<p>This was all pretty smooth. The only hiccup was that I needed to use a <code>/docs</code> directory as the output, and set github to source the page from the <code>/docs</code> since you can&rsquo;t give github an arbitrary directory to source from.</p>
+<p>Otherwise I just check out the <a href="https://gohugo.io/getting-started/quick-start/">HUGO quick start guide</a>, and hugo-bearblog <a href="https://github.com/janraasch/hugo-bearblog#installation">installation</a> / <a href="https://github.com/janraasch/hugo-bearblog#starting-fresh">starting-fresh</a> sections. The result: a pretty quick site!</p>
+<p><img src="/static/img/20220210225520.png" alt="img"></p>
+<p>One thing bothered me though, that favicon attempting to load. What do you mean loading a favicon? I don&rsquo;t have one! This <a href="https://stackoverflow.com/a/13416784">stackoverflow post</a> had the solution: add  <code>&lt;link rel=&quot;icon&quot; href=&quot;data:;base64,=&quot;&gt;</code> to <code>&lt;head&gt;</code></p>
+<p>I did this using hugo <a href="https://gohugo.io/templates/partials/">partial templates</a> and overriding <code>/layouts/partials/favicon.html</code></p>
+<p><img src="/static/img/20220210225558.png" alt="img"></p>
+<p>Ahh! Much better.</p>
+<h4 id="dns">DNS</h4>
+<p>My goal is to have the <code>www</code> subdomain and the apex domain point to the blog.
+This is a little tricky because of how apex domains work.</p>
+<p>Namecheap has their <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">own docs</a> on how to do it, but they&rsquo;re bad. It suggests a bunch of A records pointing to github IPs that could change.</p>
+<p>What I ended up doing was using an <code>ALIAS</code> record that points at the github domain. This tells the DNS server to look up the address of your github domain and return that address for your domain. You can read more about them at <a href="https://help.ns1.com/hc/en-us/articles/360017511293-What-is-the-difference-between-CNAME-and-ALIAS-records-">NS1</a>, and why you need them at the <a href="https://www.isc.org/blogs/cname-at-the-apex-of-a-zone/">isc</a></p>
+<p>If you&rsquo;re new to DNS (like me) I&rsquo;d recommend using a private/incognito browser for all queries to your new site. Browser caching on top of DNS caching is a recipe for frustration. <a href="https://jvns.ca/blog/2021/12/15/mess-with-dns/">Mess with DNS</a> from the wonderful Julia Evans is a great tool for learning as well.</p>
+<p>Here&rsquo;s what my setup looked like in the end.</p>
+<p><img src="/static/img/20220131225723.png" alt="img"></p>
+<p>The <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">github documentation</a> was a little scattered, but they&rsquo;ll automatically redirect between the <code>www</code> and apex domain.</p>
+<p>After the DNS was set up I put my domain into the UI box, and after chugging away for a few minutes everything looked good. This is what&rsquo;s shown if it works (why isn&rsquo;t that in their docs!).
+<img src="/static/img/20220116163530.png" alt="img"></p>
+<p>Then it was done! The final webpagetest result showed that nothing strange was going on with DNS.
+<img src="/static/img/20220210232118.png" alt="img"></p>
+<p>I spent a lot of time poking around for different solutions. There&rsquo;s no lack of them, but they can be hard to find. Hopefully this helps.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

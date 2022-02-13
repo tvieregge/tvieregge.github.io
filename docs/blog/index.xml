@@ -6,7 +6,26 @@
     <description>Recent content in Blog on tvier.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 21:44:54 -0500</lastBuildDate><atom:link href="http://www.tvier.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 00:17:38 -0500</lastBuildDate><atom:link href="http://www.tvier.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Temp</title>
+      <link>http://www.tvier.net/blog/test-temp/</link>
+      <pubDate>Sun, 13 Feb 2022 00:17:38 -0500</pubDate>
+      
+      <guid>http://www.tvier.net/blog/test-temp/</guid>
+      <description>This is a page about »Test Temp«.</description>
+    </item>
+    
+    <item>
+      <title>A walk through lightweight blogging</title>
+      <link>http://www.tvier.net/blog/a_walk_through_lightweight_blogging/</link>
+      <pubDate>Sat, 12 Feb 2022 23:57:11 -0500</pubDate>
+      
+      <guid>http://www.tvier.net/blog/a_walk_through_lightweight_blogging/</guid>
+      <description>Let&amp;rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&amp;rsquo;t going to cut it.
+This is what I ran into while setting up this blog. I didn&amp;rsquo;t find any other resources going over what was currently available, so I thought I&amp;rsquo;d run through my experience in the hopes that it will be easier for the next person.</description>
+    </item>
+    
     <item>
       <title>new blog</title>
       <link>http://www.tvier.net/blog/new_blog/</link>
