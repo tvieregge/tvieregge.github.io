@@ -35,7 +35,7 @@ This is what I ran into while setting up this blog. I didn&rsquo;t find any othe
 <meta itemprop="description" content="Let&rsquo;s say you want to set up a blog, there are plenty of good reasons after all. But, you hate websites that are slow, full of spyware, and unusable on spotty connections. This leaves you with a bit of a problem, the big names aren&rsquo;t going to cut it.
 This is what I ran into while setting up this blog. I didn&rsquo;t find any other resources going over what was currently available, so I thought I&rsquo;d run through my experience in the hopes that it will be easier for the next person."><meta itemprop="datePublished" content="2022-02-12T23:57:11-05:00" />
 <meta itemprop="dateModified" content="2022-02-12T23:57:11-05:00" />
-<meta itemprop="wordCount" content="999">
+<meta itemprop="wordCount" content="1017">
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -245,7 +245,7 @@ This is what I ran into while setting up this blog. I didn&rsquo;t find any othe
 <p>First I needed to figure out what I actually wanted so I knew what I was building. This is what I came up with:</p>
 <ul>
 <li>&ldquo;fast&rdquo;</li>
-<li>Simple layout and styling, but more than basic HTML (I&rsquo;m looking for <a href="https://axelletrt.github.io/bettermotherfuckingwebsite/">bettermotherfuckingwebsite</a> not <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite</a>)</li>
+<li>Simple layout and styling, but more than basic HTML (I&rsquo;m looking for <a href="http://bettermotherfuckingwebsite.com/">bettermotherfuckingwebsite</a> not <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite</a>)</li>
 <li>No tracking. No JS at all ideally</li>
 <li>Easy to get to (simple, flexible domain)</li>
 <li>Easy for me to use (This means publishing in markdown, since that&rsquo;s what I take my notes in)</li>
@@ -271,6 +271,7 @@ This is what I ran into while setting up this blog. I didn&rsquo;t find any othe
 <p>Otherwise I just check out the <a href="https://gohugo.io/getting-started/quick-start/">HUGO quick start guide</a>, and hugo-bearblog <a href="https://github.com/janraasch/hugo-bearblog#installation">installation</a> / <a href="https://github.com/janraasch/hugo-bearblog#starting-fresh">starting-fresh</a> sections. The result: a pretty quick site!</p>
 <p><img src="/static/img/20220210225520.png" alt="img"></p>
 <p>One thing bothered me though, that favicon attempting to load. What do you mean loading a favicon? I don&rsquo;t have one! This <a href="https://stackoverflow.com/a/13416784">stackoverflow post</a> had the solution: add  <code>&lt;link rel=&quot;icon&quot; href=&quot;data:;base64,=&quot;&gt;</code> to <code>&lt;head&gt;</code></p>
+<p><em>Edit: According to some comments on <a href="https://lobste.rs/s/xgybsc/walk_through_lightweight_blogging#c_ukdfyf">lobste.rs</a> it might be a better idea to use <code>&lt;link rel=&quot;icon&quot; href=&quot;data:,&quot;&gt;</code></em></p>
 <p>I did this using hugo <a href="https://gohugo.io/templates/partials/">partial templates</a> and overriding <code>/layouts/partials/favicon.html</code></p>
 <p><img src="/static/img/20220210225558.png" alt="img"></p>
 <p>Ahh! Much better.</p>

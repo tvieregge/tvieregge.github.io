@@ -12,7 +12,7 @@ This is what I ran into while setting up this blog. I didn't find any other reso
 ### What was I aiming for?
 First I needed to figure out what I actually wanted so I knew what I was building. This is what I came up with:
 - "fast"
-- Simple layout and styling, but more than basic HTML (I'm looking for [bettermotherfuckingwebsite](https://axelletrt.github.io/bettermotherfuckingwebsite/) not [motherfuckingwebsite](http://motherfuckingwebsite.com/))
+- Simple layout and styling, but more than basic HTML (I'm looking for [bettermotherfuckingwebsite](http://bettermotherfuckingwebsite.com/) not [motherfuckingwebsite](http://motherfuckingwebsite.com/))
 - No tracking. No JS at all ideally
 - Easy to get to (simple, flexible domain)
 - Easy for me to use (This means publishing in markdown, since that's what I take my notes in)
@@ -56,6 +56,8 @@ Otherwise I just check out the [HUGO quick start guide](https://gohugo.io/gettin
 ![img](/static/img/20220210225520.png)
 
 One thing bothered me though, that favicon attempting to load. What do you mean loading a favicon? I don't have one! This [stackoverflow post](https://stackoverflow.com/a/13416784) had the solution: add  `<link rel="icon" href="data:;base64,=">` to `<head>`
+
+_Edit: According to some comments on [lobste.rs](https://lobste.rs/s/xgybsc/walk_through_lightweight_blogging#c_ukdfyf) it might be a better idea to use `<link rel="icon" href="data:,">`_
 
 I did this using hugo [partial templates](https://gohugo.io/templates/partials/) and overriding `/layouts/partials/favicon.html`
 
