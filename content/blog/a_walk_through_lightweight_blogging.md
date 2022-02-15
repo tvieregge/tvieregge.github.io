@@ -26,7 +26,7 @@ http://danluu.com/web-bloat/ shows that his site is one of the fastest out there
 So we got 290ms until "Visually Complete", which seemed like the best metric to go by, even though I still can't find exactly what it means... We also got 187 ms for the data transfer to complete. This is a very clear metric, there's no ambiguity about what it means, but in non-trivial cases it can be difficult to interpret. Luckily I'm aiming for the trivial case.
 
 ### Can I use a platform?
-The easiest option I could think of was using some other, less well know, blogging platform. After digging around for a while I found [bearblog](https://bearblog.dev/) and [mataroa.blog](https://bearblog.dev/), both of which are on the wonderful [Plain Text Project](https://plaintextproject.online/tools.html). They both support markdown, seem pretty easy to use, and look pretty good. Running them through webpagetest highlighted some issues though.
+The easiest option I could think of was using some other, less well know, blogging platform. After digging around for a while I found [bearblog](https://bearblog.dev/) and [mataroa.blog](https://mataroa.blog/), both of which are on the wonderful [Plain Text Project](https://plaintextproject.online/tools.html). They both support markdown, seem pretty easy to use, and look pretty good. Running them through webpagetest highlighted some issues though.
 
 mataroa was particularly slow to load, getting uncomfortably close to 1s to be visually complete. Most of this was from a strangely slow connection. I tested from various locations around the world and this stayed consistent. Not sure what's up, but it didn't look like a good option.
 ![img](/static/img/20220128001042.png)
