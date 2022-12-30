@@ -7,6 +7,7 @@ hugo -d docs
 
 For renaming images from obsidian
 ```
+remove="Pasted image "
 for i in  "$remove"*;do mv "$i" "${i#"$remove"}";done
 ```
 https://unix.stackexchange.com/questions/163864/how-to-remove-prefix-from-multiple-files-in-a-directory
