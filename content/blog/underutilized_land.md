@@ -1,5 +1,5 @@
 +++
-title = "Underutilized land"
+title = "What's that parking lot costing your city?"
 date = "2022-12-21T22:06:15-0500"
 
 tags = []
@@ -10,7 +10,9 @@ If you live in North America, you're probably used to seeing scenes like this.
 
 ![img](/static/img/underutilized_land/20221203204541.png)
 
-Some people might love it, some might hate it, but to most this looks so normal we don't think about it. That's a shame, because what you see here results in reduced services and crumbling infrastructure if you're lucky, and digs your city deeper into debt on top of that if you're not.
+A bunch of asphalt, a couple traffic lights, a big store and some greenery.
+
+Some people might love it, some might hate it, but to most of us this looks so normal we don't think about it. That's a shame, because what you see here results in reduced services and crumbling infrastructure if you're lucky, and digs your city deeper into debt on top of that if you're not.
 
 Let's take a closer look at what else could have been done, and figure out just how much money we're leaving on the table.
 
@@ -26,7 +28,7 @@ This place big! Mapping this area out using Ottawa's [gis tools](https://maps.ot
 ![img](/static/img/underutilized_land/20221203213701.png)
 
 ### What else could we put there?
-This spot *could* have been used for housing. That housing would generate significantly more revenue for the city from property taxes, but people living there would also cost more to service. On the surface it's not obvious what the net result is, but a report commissioned by the city of Ottawa shows that the housing would generate and average excess of $455 CAD per person[[1]](#link_1) (According to new sources I can't verify this number might now be $606 per person[[2]](#link_2))
+This spot *could* have been used for housing. That housing would generate significantly more revenue for the city from property taxes, but people living there would also cost more to service. On the surface it's not obvious what the net result is, but a report commissioned by the city of Ottawa shows that the housing would generate an average excess of $455 CAD per person[[1]](#link_1) (according to new sources I can't verify this number might now be $606 per person[[2]](#link_2)).
 
 To get to dollar value for that parking lot we need to know how many people could live in that space. Using an average of of 2.5 people per household given by StatsCan[[3]](#link_3) we can look at a few different types of housing to get a range of values[[4]](#link_4).
 
@@ -66,10 +68,10 @@ Now we can plot out our data, and see how much revenue that parking lot could ge
 
 | Density | People/ha | $/ha | $/parking lot |
 | - | - | - | - |
-| Low  | 34 | 15,470 | 33,260
-| Riverdale | 78| 35,490 |76,303
-| Medium | 468 | 212,940 | 457,821
-| High | 2,356 | 1,071,980 | 2,304,757
+| Low  | 34 | $15,470 | $33,260
+| Riverdale | 78| $35,490 | $76,303
+| Medium | 468 | $212,940 | $457,821
+| High | 2,356 | $1,071,980 | $2,304,757
 
 To put this in perspective, this single parking lot could generate over 10% of the city of Ottawa's entire $20 million annual budget for childcare. Or enough revenue to fund about 1 and a half libraries.
 
