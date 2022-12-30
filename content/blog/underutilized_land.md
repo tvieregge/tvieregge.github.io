@@ -3,7 +3,7 @@ title = "What's that parking lot costing your city?"
 date = "2022-12-21T22:06:15-0500"
 
 tags = []
-draft = true
+draft = false
 +++
 
 If you live in North America, you're probably used to seeing scenes like this.
